@@ -1,0 +1,29 @@
+<h2>Gestión de Autos</h2>
+
+<label for="placa">Buscar por Placa: </label>
+<input [(ngModel)]="placa Busqueda" placeholder="Buscar por placa" />
+
+<table>
+  <thead>
+    <tr>
+      <th>Placa</th>
+      <th>Marca</th>
+      <th>Color</th>
+      <th>Precio</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let Autos of buscarPorPlaca()">
+      <td>{{ Autos.placa }}</td>
+      <td>{{ Autod.marca }}</td>
+      <td>{{ Autos.color }}</td>
+      <td>{{ Autos.precio }}</td>
+      <td>
+        <button (click)="editarAutos(Autos)">Editar</button>
+        <button (click)="eliminarAutos(Autos.placa)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+

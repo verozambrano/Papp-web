@@ -1,0 +1,29 @@
+<h2>Autos</h2>
+
+<label for="color">Filtrar por color: </label>
+<select [(ngModel)]="filtroColor">
+  <option value="">Todos</option>
+  <option value="Rojo">Rojo</option>
+  <option value="Azul">Azul</option>
+  
+</select>
+
+<table>
+  <thead>
+    <tr>
+      <th>Placa</th>
+      <th>Marca</th>
+      <th>Color</th>
+      <th>Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let vehiculo of filtrarPorColor()">
+      <td>{{ vehiculo.placa }}</td>
+      <td>{{ vehiculo.marca }}</td>
+      <td>{{ vehiculo.color }}</td>
+      <td>{{ vehiculo.precio }}</td>
+    </tr>
+  </tbody>
+</table>
+

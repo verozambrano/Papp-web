@@ -1,0 +1,16 @@
+{
+    "autos": [
+        {
+            "placa": "ABC123",
+            "marca": "Toyota",
+            "color": "Rojo",
+            "precio": 20000
+        },
+        {
+            "placa": "XYZ789",
+            "marca": "Honda",
+            "color": "Azul",
+            "precio": 18000
+        }
+    ]
+}
